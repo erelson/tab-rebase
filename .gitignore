@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*~
+dist/
+host/tab_rebase_host.log
+host/tab_rebase_host.bat
+host/tab_rebase.json
+host/tab_rebase_chrome.json

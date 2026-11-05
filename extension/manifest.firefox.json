@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Rebase",
+  "version": "0.2.0",
+  "description": "Edit the tabs of a window in your $EDITOR, git-rebase style.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@tab-rebase-gertlex",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["tabs", "nativeMessaging"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Edit tabs in editor"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": { "default": "Alt+Shift+E" },
+      "description": "Open this window's tabs in the editor"
+    }
+  }
+}

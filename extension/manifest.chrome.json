@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Rebase",
+  "version": "0.2.0",
+  "description": "Edit the tabs of a window in your $EDITOR, git-rebase style.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnkLACAugE28Vc0iy5Cz9VSP5egRUR1Tvn2tBi6PLHTOZlQ3Pu597NEtFkrpNLLy2zMTTAzJ/u7qK+jqgkt/UAwCOGN0Hqn/aqP3odF9wv4d9FOuwjgbT6TxQF5VTQZOZPAh9s3GcjaDn7JRJZP4MQbmQhp9Txa8o+WwdswgQGb8K1V+HgUzCwXAvE8f3ElnNiEDiRryhRkhGaifQRqdQtpDxc764Y0PGjaDrKjMqW4Mq+KAPHB2/ThBwjIAPQ5Om1u9cKujTX0+GI1/HP3mUhTL9EIHx8j4nU251Rlsv52Enke5WVB60hWQiY2u6Qhpw1fscFZBJUTPYrg1ktLS8oQIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "tabs",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Edit tabs in editor"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "Open this window's tabs in the editor"
+    }
+  }
+}
