@@ -32,7 +32,10 @@ or vim inside WSL).
 
 1. **Register the host** (once, and again if you move the folder):
    `py host\install.py` on Windows, `python3 host/install.py` elsewhere.
-2. **Load the extension**
+2. **Build the extension:** `py build.py` on Windows, `python3 build.py`
+   elsewhere. This creates `dist/firefox/` and `dist/chrome/`. Re-run it
+   after editing anything in `extension/`, then reload the extension.
+3. **Load the extension**
    - **Firefox:** `about:debugging#/runtime/this-firefox` → *Load Temporary
      Add-on…* → `dist/firefox/manifest.json`. Temporary add-ons are removed on
      restart; for a permanent install sign it as unlisted on AMO
@@ -41,7 +44,7 @@ or vim inside WSL).
    - **Chrome / Edge:** `chrome://extensions` (or `edge://extensions`) →
      enable *Developer mode* → *Load unpacked* → `dist/chrome`. Stays installed
      across restarts.
-3. Click the toolbar button (it may be under the puzzle-piece menu).
+4. Click the toolbar button (it may be under the puzzle-piece menu).
 
 ## Configuration
 
